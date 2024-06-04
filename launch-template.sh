@@ -20,7 +20,7 @@ sudo apt install mysql-server -y
 sudo apt install php-fpm php-mysql -y
 
 ###### Install other common php extensions ######
-sudo apt install openssl php-bcmath php-curl php-json php-mbstring php-mysql php-tokenizer php-xml php-zip
+sudo apt install openssl php-bcmath php-curl php-json php-mbstring php-mysql php-tokenizer php-xml php-zip -y
 
 ###### Check php version ######
 php -v
