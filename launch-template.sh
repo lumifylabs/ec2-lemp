@@ -34,6 +34,13 @@ sudo snap install --classic certbot
 ###### Prepare the Certbot command ######
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
+###### Generate Diffie-Hellman keys ######
+sudo openssl dhparam -out /etc/nginx/dhparam.pem 2048
+
+###### Create a common ACME-challenge directory ###### 
+sudo mkdir -p /var/www/_letsencrypt
+sudo chown www-data /var/www/_letsencrypt
+
 ################################################################
 ###### Once installed several steps must be run manually! ######
 ################################################################
